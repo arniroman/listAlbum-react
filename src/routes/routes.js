@@ -12,8 +12,8 @@ export default () => (
             <MuiThemeProvider>
                 <Switch>
                     <Route path="/" exact component={App} />
-                    <Route path="/currentAlbum/:id"  component={CurrentAlbum} />
-                    <Route path="/currentPhoto/:id"  component={CurrentPhotoFromAlbums} />
+                    <Route path="/currentAlbum/:id" exact component={CurrentAlbum} />
+                    <Route path="/currentPhoto/:id" exact component={CurrentPhotoFromAlbums} />
                 </Switch>
             </MuiThemeProvider>
         </div>

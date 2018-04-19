@@ -4,6 +4,6 @@ export default function createSometh (state = {} ,action){
               return action.payload
             break
             default:
-              return {...state}
+              return state
         }
 }
