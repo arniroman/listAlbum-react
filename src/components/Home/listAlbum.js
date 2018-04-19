@@ -1,28 +1,48 @@
 import React ,{ Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { loadSometh } from '../../logic'
+import { getCurrentAlbumId } from '../../logic'
 
 class ListAlbum extends Component {
    constructor(props){
        super(props)
        this.state = {
-           name:''
+          
        }
    }
 
-   componentDidMount(){
+componentDidMount(){
     this.props.loadSometh()
+}
+
+getCurrentAlbums = (item) => {
+    console.log(item,'item')
+    this.props.getCurrentAlbumId(item.id)
+}
+
+listAlbumsView = () => {
+    let arrayList = this.props.albumData.data 
+
+    return(
+        <div>
+            {arrayList && arrayList.map((item,key) =>
+            <ul key={key}>
+                <Link to ='/currentAlbum'>
+                    <li onClick={(e) => {this.getCurrentAlbums(item,e)}}>
+                        {item.title}
+                    </li>
+                </Link>
+            </ul>
+            )}
+        </div>   
+    )
 }
    
 render(){
-       if(this.props.data){
-           console.log(this.props.data)
-       }
         return(
             <div>
-                <p>Hello</p>
-                <input onChange={this.handelCangeName} />
-                <button onClick={this.handelSome} >new</button>
+                {this.listAlbumsView()}
             </div>
         )
     }
@@ -31,11 +51,11 @@ render(){
 
 const mapStateToProps = (state) => {
     return {
-        data: state.data,
+        albumData: state.data,
     }
 } 
 
-export default connect(mapStateToProps,{loadSometh})(ListAlbum)
+export default connect(mapStateToProps,{loadSometh,getCurrentAlbumId})(ListAlbum)
 
 
 
