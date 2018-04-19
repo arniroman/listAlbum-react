@@ -1,0 +1,22 @@
+.listItems-album{
+    list-style: none
+}
+a {
+    text-decoration: none;
+}
+.listBox-album{
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    cursor: pointer;
+    color: #222;
+    background: rgb(240, 208, 208);
+}
+.titleAlbums{
+   text-align: center;
+   font-size: 30px; 
+}

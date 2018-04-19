@@ -4,3 +4,10 @@ export function getCurrentAlbum(data){
         payload: data
     }
 }
+
+export function clearDataAlbum(data){
+    return {
+        type:'CLEAR_DATA_WITH_CURRENT_ALBUM',
+        payload: data
+    }
+}
