@@ -9,6 +9,7 @@
     border: 10px solid;
     border-color: #d3fbff;
     border-radius: 5px;
+    list-style: none;
 }
 .imageAlbum{
     width: 100%;
