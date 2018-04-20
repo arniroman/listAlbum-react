@@ -49,7 +49,7 @@ class CurrentPhotoFromAlbums extends Component {
                     </div>
                     <div className='photoData-btn'>
                         <Link to ='/'>
-                            <FlatButton label="Go to home page" primary={true} />
+                            <FlatButton label="Back to homepage" primary={true} />
                         </Link>
                         <Link to={`/currentAlbum/${photoData.albumId}`}>
                             <RaisedButton label="Back to album" secondary={true} />

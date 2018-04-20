@@ -31,7 +31,7 @@ render(){
                 <p className='photosTitle'>Photos</p>
                 <div className='backBtn'>
                     <Link to='/'>
-                        <RaisedButton label="Back to home page" secondary={true}/>
+                        <RaisedButton label="Back to homepage" secondary={true}/>
                     </Link>
                 </div>
                 <div className='currentAlbum-box'>
