@@ -1,0 +1,37 @@
+.photoDetails-title{
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 40px; 
+}
+.photoAlbum-wrapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photoWrapp{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.photoFullWith{
+    width: 100%;
+}
+.photoData-key{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding-right: 3px;
+}
+.photoData-value{
+    font-size: 18px;
+    font-style: italic;
+}
+.photoAlbum-box{
+  max-width: 400px;  
+}
+.photoData-btn{
+    display: flex;
+    justify-content: center;
+    margin: 50px 5px;
+}

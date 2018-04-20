@@ -1,0 +1,29 @@
+.currentAlbum-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imageBox{
+    width: 350px;
+    height: 350px;
+    border: 10px solid;
+    border-color: #d3fbff;
+    border-radius: 5px;
+}
+.imageAlbum{
+    width: 100%;
+}
+.photosTitle{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin: 50px 0;
+}
+.choosePhoto{
+    text-align: center;
+    margin: 20px 0;
+}
+.backBtn{
+    text-align: center;
+    margin-bottom: 50px;
+}

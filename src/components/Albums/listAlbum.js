@@ -31,17 +31,17 @@ listAlbumsView = () => {
     let arrayList = this.props.albumData.data 
     let page = this.state.pages || 1
     let pages = []
-    let resultArray
     let perPage = 4
     let lastIndex = page * perPage
     let firstIndex = lastIndex - perPage
-
+    let resultArray
+    /** created resultArray for dosage of goods quantity */
     if(arrayList){
         resultArray = arrayList.slice(firstIndex,lastIndex)
     }
-
+    /** writed in pages required quantity of numbers for pagination */
     if(arrayList){
-        for(let i= 1; i <= Math.ceil(arrayList.length/ perPage); i++){
+        for(let i = 1; i <= Math.ceil(arrayList.length/ perPage); i++){
             pages.push(i)
         }
     }
@@ -54,7 +54,7 @@ listAlbumsView = () => {
                     <Link to={`/currentAlbum/${item.id}`}>
                         <div className='listBox-album' >
                             <div>
-                                <li className='listItems-album' onClick={(e) => {this.getCurrentAlbums(item,e)}}>
+                                <li className='listItems-album' onClick={(e)=>{this.getCurrentAlbums(item,e)}}>
                                     {item.title}
                                 </li>
                             </div>

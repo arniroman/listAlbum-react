@@ -1,7 +1,6 @@
-
-export function loadSometh(data){
+export function loadAllAlbums(data){
     return {
-        type: 'ADD_SOME',
+        type: 'GET_ALL_ALBUMS',
         payload: data
     }
 }

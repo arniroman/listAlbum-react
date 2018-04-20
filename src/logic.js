@@ -9,7 +9,7 @@ loadProgressBar()
 export const loadSometh = () => dispatch => {
     axios.get('https://jsonplaceholder.typicode.com/albums')
          .then((respons) => {
-            dispatch(loadAction.loadSometh(respons))   
+            dispatch(loadAction.loadAllAlbums(respons))   
          })
 }
 
@@ -30,4 +30,8 @@ export const getCurrentPhotoData = item => dispatch => {
 
 export const clearDataWithAlbum = item => dispatch => {
     dispatch(currentAlbum.clearDataAlbum(item))   
+}
+
+export const clearDataWithPhoto = item => dispatch => {
+    dispatch(currentPhoto.clearPhotoData(item))   
 }

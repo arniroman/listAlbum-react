@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import createSometh from './createsomething'
+import createSometh from './getAllAlbums'
 import currentAlbum from './getCurrentAlbum'
 import currentPhoto from './getCurrentPhoto'
 
