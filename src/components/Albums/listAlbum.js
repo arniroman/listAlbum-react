@@ -83,7 +83,7 @@ listAlbumsView = () => {
 render(){
         return(
             <div>
-                <p className='titleAlbums'> Albums Gallery </p>
+                <p className='titleAlbums'> Album Gallery </p>
                 {this.listAlbumsView()}
             </div>
         )
