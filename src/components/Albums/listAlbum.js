@@ -38,14 +38,12 @@ listAlbumsView = () => {
     /** created resultArray for dosage of goods quantity */
     if(arrayList){
         resultArray = arrayList.slice(firstIndex,lastIndex)
-    }
     /** writed in pages required quantity of numbers for pagination */
-    if(arrayList){
         for(let i = 1; i <= Math.ceil(arrayList.length/ perPage); i++){
             pages.push(i)
         }
     }
-      
+   
     return(
         <div className='listWrapp-album' >
         <div className='listBox-wrapp' >
